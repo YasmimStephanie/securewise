@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090c15">
+  <meta name="description" content="SecureWise helps everyone learn practical digital safety through clear lessons and interactive challenges.">
+  <title>SecureWise | Digital Safety Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="SecureWise home" data-i18n-aria="brandHome">
+        <span class="brand-mark" aria-hidden="true">⬡</span>
+        Secure<span>Wise</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-aria="mainNavigation">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#learn" data-i18n="navLearn">Learn</a>
+        <a href="#quiz" data-i18n="navQuiz">Quiz</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+      </nav>
+
+      <div class="language-switcher" role="group" aria-label="Select language" data-i18n-aria="selectLanguage">
+        <button class="language-btn active" id="lang-en" type="button" data-lang="en" aria-pressed="true" aria-label="Switch to English">EN</button>
+        <button class="language-btn" id="lang-pt" type="button" data-lang="pt" aria-pressed="false" aria-label="Mudar para português">PT</button>
+      </div>
+
+      <a class="nav-cta" href="#quiz">
+        <span data-i18n="navChallenge">Take the Challenge</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation" data-i18n-aria="toggleNavigation">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>
+            <span data-i18n="heroEyebrow">DIGITAL SAFETY ACADEMY</span>
+          </p>
+
+          <h1>
+            <span data-i18n="heroTitle1">Security is</span>
+            <br>
+            <em data-i18n="heroTitle2">knowledge.</em>
+            <br>
+            <span data-i18n="heroTitle3">Knowledge is</span>
+            <br class="hero-title-break">
+            <span class="silver-text" data-i18n="heroTitle4">power.</span>
+          </h1>
+
+          <p class="hero-description" data-i18n="heroDescription">
+            Protect your digital life with practical lessons, real-world scenarios, and interactive challenges — no technical background required.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#learn">
+              <span data-i18n="startLearning">Start Learning</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-outline" href="#quiz">
+              <span data-i18n="testKnowledge">Test Your Knowledge</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span data-i18n="heroStep1">01 / Learn</span>
+            <span data-i18n="heroStep2">02 / Practice</span>
+            <span data-i18n="heroStep3">03 / Stay Secure</span>
+          </div>
+        </div>
+
+        <div class="hero-art reveal">
+          <img
+            src="assets/shield.png"
+            alt="SecureWise metallic silver security shield with a padlock and purple details"
+            data-i18n-alt="shieldAlt"
+            class="hero-shield"
+            width="1024"
+            height="1024"
+            fetchpriority="high"
+          >
+          <span class="art-caption" data-i18n="shieldCaption">PROTECTION / BY DESIGN</span>
+        </div>
+      </div>
+
+      <div class="container hero-bottom">
+        <span data-i18n="independentProject">INDEPENDENT EDUCATIONAL PROJECT</span>
+        <span data-i18n="scrollExplore">SCROLL TO EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <section class="section intro-strip" aria-label="Our approach" data-i18n-aria="ourApproach">
+      <div class="container principles">
+        <div>
+          <span class="principle-num">01</span>
+          <strong data-i18n="principle1">Understand the risks</strong>
+        </div>
+        <div>
+          <span class="principle-num">02</span>
+          <strong data-i18n="principle2">Build safer habits</strong>
+        </div>
+        <div>
+          <span class="principle-num">03</span>
+          <strong data-i18n="principle3">Navigate with confidence</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section learn-section" id="learn">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="learnEyebrow">THE KNOWLEDGE COLLECTION</p>
+            <h2>
+              <span data-i18n="learnTitle1">Everyday protection.</span>
+              <br>
+              <em data-i18n="learnTitle2">Exceptional confidence.</em>
+            </h2>
+          </div>
+          <p data-i18n="learnDescription">
+            Explore six essential topics designed to make digital security understandable and actionable.
+          </p>
+        </div>
+
+        <div class="lessons-grid">
+          <article class="lesson-card reveal">
+            <span class="lesson-index" data-i18n="lessonCategory1">01 / ESSENTIALS</span>
+            <span class="lesson-icon" aria-hidden="true">✦</span>
+            <h3 data-i18n="lesson1Title">Spot Phishing</h3>
+            <p data-i18n="lesson1Description">Learn to recognize suspicious messages, fake websites, and urgent requests designed to steal your information.</p>
+            <details>
+              <summary data-i18n="practicalTip">Practical safety tip</summary>
+              <p data-i18n="lesson1Tip">Open the official app or type the website address yourself instead of following unexpected links.</p>
+            </details>
+          </article>
+
+          <article class="lesson-card reveal">
+            <span class="lesson-index" data-i18n="lessonCategory2">02 / ESSENTIALS</span>
+            <span class="lesson-icon" aria-hidden="true">◈</span>
+            <h3 data-i18n="lesson2Title">Stronger Passwords</h3>
+            <p data-i18n="lesson2Description">Discover why long, unique passwords and password managers are essential for protecting your accounts.</p>
+            <details>
+              <summary data-i18n="practicalTip">Practical safety tip</summary>
+              <p data-i18n="lesson2Tip">Use a different password for every important account and enable multi-factor authentication.</p>
+            </details>
+          </article>
+
+          <article class="lesson-card reveal">
+            <span class="lesson-index" data-i18n="lessonCategory3">03 / ESSENTIALS</span>
+            <span class="lesson-icon" aria-hidden="true">◎</span>
+            <h3 data-i18n="lesson3Title">Account Protection</h3>
+            <p data-i18n="lesson3Description">Understand multi-factor authentication, verification codes, and how to respond to unexpected sign-in alerts.</p>
+            <details>
+              <summary data-i18n="practicalTip">Practical safety tip</summary>
+              <p data-i18n="lesson3Tip">Never share a one-time verification code with someone who contacts you unexpectedly.</p>
+            </details>
+          </article>
+
+          <article class="lesson-card reveal">
+            <span class="lesson-index" data-i18n="lessonCategory4">04 / EVERYDAY SAFETY</span>
+            <span class="lesson-icon" aria-hidden="true">◇</span>
+            <h3 data-i18n="lesson4Title">Digital Privacy</h3>
+            <p data-i18n="lesson4Description">Take control of the personal information you share, app permissions, and your online footprint.</p>
+            <details>
+              <summary data-i18n="practicalTip">Practical safety tip</summary>
+              <p data-i18n="lesson4Tip">Review app permissions regularly and avoid posting details that could help someone impersonate you.</p>
+            </details>
+          </article>
+
+          <article class="lesson-card reveal">
+            <span class="lesson-index" data-i18n="lessonCategory5">05 / EVERYDAY SAFETY</span>
+            <span class="lesson-icon" aria-hidden="true">⌁</span>
+            <h3 data-i18n="lesson5Title">Safer Online Banking</h3>
+            <p data-i18n="lesson5Description">Identify financial scams, monitor transactions, and verify requests through trusted banking channels.</p>
+            <details>
+              <summary data-i18n="practicalTip">Practical safety tip</summary>
+              <p data-i18n="lesson5Tip">Turn on transaction alerts and contact your bank using its official number if something looks wrong.</p>
+            </details>
+          </article>
+
+          <article class="lesson-card reveal">
+            <span class="lesson-index" data-i18n="lessonCategory6">06 / EVERYDAY SAFETY</span>
+            <span class="lesson-icon" aria-hidden="true">⬡</span>
+            <h3 data-i18n="lesson6Title">Device Security</h3>
+            <p data-i18n="lesson6Description">Keep your phone and computer protected with updates, screen locks, and safer connection habits.</p>
+            <details>
+              <summary data-i18n="practicalTip">Practical safety tip</summary>
+              <p data-i18n="lesson6Tip">Install updates promptly and avoid sensitive activity on public or shared devices.</p>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="container quiz-layout">
+        <div class="quiz-intro reveal">
+          <p class="eyebrow" data-i18n="quizEyebrow">THE SECURITY CHALLENGE</p>
+          <h2>
+            <span data-i18n="quizTitle1">Think you're</span>
+            <br>
+            <em data-i18n="quizTitle2">cyber aware?</em>
+          </h2>
+          <p data-i18n="quizDescription">
+            Put your instincts to the test with ten real-life digital safety scenarios. Get instant feedback and a final score.
+          </p>
+          <div class="quiz-facts">
+            <span data-i18n="quizFact1">10 questions</span>
+            <span data-i18n="quizFact2">No sign-up</span>
+            <span data-i18n="quizFact3">Instant results</span>
+          </div>
+        </div>
+
+        <div class="quiz-panel reveal" id="quiz-panel">
+          <div class="quiz-top">
+            <span class="quiz-tag" data-i18n="quizAssessment">SECUREWISE / ASSESSMENT</span>
+            <span id="question-counter">READY TO BEGIN</span>
+          </div>
+
+          <div
+            class="progress-track"
+            id="quiz-progress"
+            role="progressbar"
+            aria-label="Quiz progress"
+            data-i18n-aria="quizProgress"
+            aria-valuemin="0"
+            aria-valuemax="10"
+            aria-valuenow="0"
+          >
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+
+          <div id="quiz-content" aria-live="polite">
+            <div class="quiz-welcome">
+              <div class="quiz-symbol" aria-hidden="true">◈</div>
+              <h3 data-i18n="quizWelcomeTitle">Your digital safety check starts here.</h3>
+              <p data-i18n="quizWelcomeDescription">Ten short scenarios. One smarter, safer you.</p>
+              <button class="button button-primary" id="start-quiz" type="button">
+                <span data-i18n="beginChallenge">Begin Challenge</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">OUR PURPOSE</p>
+          <h2>
+            <span data-i18n="aboutTitle1">Clarity over</span>
+            <br>
+            <em data-i18n="aboutTitle2">complexity.</em>
+          </h2>
+        </div>
+
+        <div class="about-copy reveal">
+          <p data-i18n="aboutParagraph1">
+            SecureWise is an independent educational project created to help everyday internet users recognize digital threats and make safer choices online.
+          </p>
+          <p data-i18n="aboutParagraph2">
+            We believe cybersecurity knowledge should be approachable, practical, and available to everyone — regardless of age or technical experience.
+          </p>
+          <p class="disclaimer" data-i18n="aboutDisclaimer">
+            Educational content only. SecureWise is not a bank, security service, or emergency reporting channel. Never enter passwords or financial information into practice activities.
+          </p>
+
+          <div class="resources">
+            <h3 data-i18n="resourcesTitle">Learn more from trusted resources</h3>
+            <a href="https://consumer.ftc.gov/topics/online-security" target="_blank" rel="noopener noreferrer">FTC — Online Security ↗</a>
+            <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">CISA — Secure Our World ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">⬡</span>
+        Secure<span>Wise</span>
+      </a>
+      <p data-i18n="footerSlogan">Learn wisely. Stay secure.</p>
+      <p>
+        © <span id="year"></span> SecureWise.
+        <span data-i18n="footerDescription">Independent educational project.</span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
